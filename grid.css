@@ -1,0 +1,74 @@
+*{
+box-sizing: border-box;
+padding: 0;
+
+}
+
+
+
+.container{
+    color: aliceblue;
+    text-align: center;
+    font-size:30px;
+gap: 10px 10px;
+    height: 100vh;
+    display:grid;
+  
+    background-color: aliceblue;
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows:60px auto auto auto auto auto auto 100px 60px ;
+grid-template-areas:
+"Header Header Header Header Header Header Header Header Header Header"
+"Hero Hero Hero Hero Main Main Main Main Main Main"
+"Hero Hero Hero Hero Main Main Main Main Main Main"
+"Hero Hero Hero Hero Main Main Main Main Main Main"
+"Sidebar Sidebar Sidebar Sidebar Extra Extra Extra Extra Extra Extra"
+"Sidebar Sidebar Sidebar Sidebar Extra Extra Extra Extra Extra Extra"
+"Sidebar Sidebar Sidebar Sidebar Extra Extra Extra Extra Extra Extra"
+
+
+"Images Images Images Images Images Images Images Posts Posts Posts "
+"Foot Foot Foot Foot Foot Foot Foot Foot Foot Foot"
+;
+
+
+
+}
+ .Header{
+    grid-area:Header;
+    background-color: rgb(105, 223, 241);
+   
+}
+.Hero{
+    grid-area:Hero;
+    background-color:rgb(156, 125, 186);
+   
+}
+.Main{
+    grid-area:Main;
+    background-color:rgb(245, 234, 81);
+    grid-row: 2/span 4;
+ 
+}
+.Sidebar{
+    grid-area:Sidebar;
+    background-color: rgb(174, 244, 127);
+  
+}
+.Extra{
+grid-area:Extra;
+background-color: rgb(103, 103, 103);
+grid-row: 6/8;
+}
+.Images{
+background-color: rgb(33, 78, 38);
+    grid-area: Images;
+}
+.Posts{
+    grid-area: Posts;
+    background-color: rgb(215, 137, 209);
+}
+.Foot{
+    grid-area: Foot;
+    background-color:rgb(231, 161, 30);
+}
